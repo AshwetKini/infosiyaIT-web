@@ -143,10 +143,10 @@ const HomePage: React.FC = () => {
                     <span>Request a Quote</span>
                     <ArrowRight className="w-5 h-5" />
                   </Link>
-                  <button className="btn-secondary px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2">
+                  {/* <button className="btn-secondary px-8 py-4 rounded-full font-semibold text-lg flex items-center justify-center space-x-2">
                     <Play className="w-5 h-5" />
                     <span>View Portfolio</span>
-                  </button>
+                  </button> */}
                 </div>
               </motion.div>
             </div>

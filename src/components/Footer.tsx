@@ -10,31 +10,30 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="hexagon w-10 h-10">
-                <Hexagon className="hexagon-icon w-6 h-6" />
-              </div>
-              <span className="text-2xl font-bold gradient-text">Infosiya</span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Professional IT solutions company delivering innovative technology services.        
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
+          {/* Company Info */}
+<div className="space-y-8">
+  <div className="flex items-center space-x-2">
+    <span className="text-2xl font-bold gradient-text">Infosiya</span>
+  </div>
+  <p className="text-gray-400 text-sm leading-relaxed">
+    Professional IT solutions company delivering innovative technology services.        
+  </p>
+  <div className="flex space-x-4">
+    <a href="https://www.facebook.com/profile.php?id=61563675386995&mibextid=ZbWKwL" className="text-gray-400 hover:text-purple-400 transition-colors">
+      <Facebook className="w-5 h-5" />
+    </a>
+    <a href="https://x.com/infosiya23" className="text-gray-400 hover:text-purple-400 transition-colors">
+      <Twitter className="w-5 h-5" />
+    </a>
+    <a href="https://www.linkedin.com/company/infosiya/" className="text-gray-400 hover:text-purple-400 transition-colors">
+      <Linkedin className="w-5 h-5" />
+    </a>
+    <a href="https://www.instagram.com/infosiya?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-400 hover:text-purple-400 transition-colors">
+      <Instagram className="w-5 h-5" />
+    </a>
+  </div>
+</div>
+
 
           {/* Services */}
           <div className="space-y-4">
