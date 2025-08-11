@@ -86,7 +86,7 @@ const LeadForm: React.FC<LeadFormProps> = ({ service = '', className = '', title
       };
 
       // Submit to webhook (replace with actual webhook URL)
-      const response = await fetch('https://hooks.example.com/infosiya-forms', {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzua6w3FGaF2OuLbuJgkTe0M9yBC0kdDj8Xs5nlmynaMjM8QDlENJtjgz4vYnE8nnxs7g/exec', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
