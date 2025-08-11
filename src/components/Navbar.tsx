@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Hexagon } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar: React.FC = () => {
@@ -41,11 +41,12 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="hexagon w-10 h-10">
-              <Hexagon className="hexagon-icon w-6 h-6" />
-            </div>
-            <span className="text-2xl font-bold gradient-text">Infosiya</span>
+          <Link to="/" className="flex items-center">
+            <img
+              src="/infosiya.png"
+              alt="Infosiya Logo"
+              className="w-16 h-46 object-contain rounded"
+            />
           </Link>
 
           {/* Desktop Navigation */}
