@@ -117,31 +117,34 @@ const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Our Office</h2>
-            <p className="text-xl text-gray-600">We're located in the heart of the tech district</p>
-          </motion.div>
+     {/* Map Section */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+      className="text-center mb-12"
+    >
+      <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Our Office</h2>
+      <p className="text-xl text-gray-600">We're located in the heart of the tech district</p>
+    </motion.div>
 
-          <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="w-16 h-16 text-purple-600 mx-auto mb-4" />
-              <p className="text-gray-600">Interactive map would be embedded here</p>
-              <p className="text-sm text-gray-500 mt-2">
-                123 Tech Street, Digital City, India
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="rounded-2xl overflow-hidden shadow-lg">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.196259289254!2d77.07105617550264!3d28.59313717569197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04e1987b1f73%3A0xd3a45c99b2c6f0c!2sB-592%2C%20Chowkhandi%2C%20Tilak%20Nagar%2C%20New%20Delhi%2C%20Delhi%20110018!5e0!3m2!1sen!2sin!4v1691490000000!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen={true}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
     </div>
   );
 };
