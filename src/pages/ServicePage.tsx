@@ -15,6 +15,8 @@ import {
   TrendingUp
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
+import { Link } from 'react-router-dom';
+
 
 const ServicePage: React.FC = () => {
   const { serviceSlug } = useParams<{ serviceSlug: string }>();
@@ -354,9 +356,14 @@ const ServicePage: React.FC = () => {
             <p className="text-xl text-purple-100 mb-8 max-w-3xl mx-auto">
               Let's discuss your {service.title.toLowerCase()} project and create something amazing together.
             </p>
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors">
+           
+            <Link 
+              to="/contact" 
+              className="inline-block bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-colors"
+            >
               Schedule a Free Consultation
-            </button>
+            </Link>
+
           </motion.div>
         </div>
       </section>
