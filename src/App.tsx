@@ -65,6 +65,7 @@ import SuspensionPage from './components/SuspensionPage';
 import { usePaymentProtection } from './hooks/usePaymentProtection';
 import './App.css';
 import ScrollToTop from "./components/ScrollToTop";
+import FloatingContactButtons from './components/FloatingContactButtons';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -107,6 +108,7 @@ function App() {
         <Navbar />
         <AnimatedRoutes />
         <Footer />
+        <FloatingContactButtons />
       </div>
     </Router>
   );
