@@ -193,7 +193,7 @@ const ServicePage: React.FC = () => {
               transition={{ duration: 0.8 }}
             >
               <div className="hexagon mb-6">
-                <ServiceIcon className="hexagon-icon w-12 h-12" />
+                <ServiceIcon className="hexagon-icon w-12 h-12 mx-auto" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                 {service.title}
