@@ -11,7 +11,8 @@ import {
   Clock,
   Users,
   Award,
-  ArrowRight
+  ArrowRight,
+  TrendingUp
 } from 'lucide-react';
 import LeadForm from '../components/LeadForm';
 
@@ -41,7 +42,7 @@ const ServicePage: React.FC = () => {
       ],
       technologies: ['React', 'Node.js', 'WordPress', 'Shopify', 'Next.js'],
       timeline: '2-8 weeks',
-      startingPrice: '$2,999'
+      startingPrice: '9,999 onwards'
     },
     'app-development': {
       icon: Smartphone,
@@ -65,7 +66,7 @@ const ServicePage: React.FC = () => {
       ],
       technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase'],
       timeline: '3-12 weeks',
-      startingPrice: '$4,999'
+      startingPrice: '14,999 onwards'
     },
     'pc-assembling': {
       icon: Monitor,
@@ -89,7 +90,7 @@ const ServicePage: React.FC = () => {
       ],
       technologies: ['Intel', 'AMD', 'NVIDIA', 'ASUS', 'MSI'],
       timeline: '1-2 weeks',
-      startingPrice: '$1,499'
+      startingPrice: '20000 onwards'
     },
     'crm': {
       icon: Database,
@@ -113,7 +114,7 @@ const ServicePage: React.FC = () => {
       ],
       technologies: ['Salesforce', 'HubSpot', 'Zoho', 'Pipedrive', 'Custom'],
       timeline: '2-6 weeks',
-      startingPrice: '$3,499'
+      startingPrice: '9,499'
     },
     'custom-software-development': {
       icon: Settings,
@@ -137,8 +138,32 @@ const ServicePage: React.FC = () => {
       ],
       technologies: ['Python', 'Java', '.NET', 'React', 'Node.js'],
       timeline: '4-16 weeks',
-      startingPrice: '$5,999'
-    }
+      startingPrice: '9,999'
+    },
+    'digital-marketing': {
+    icon: TrendingUp,
+    title: 'Digital Marketing Excellence',
+    subtitle: 'Smart Strategies. Real Results.',
+    description: 'Unlock the power of digital with our end-to-end marketing solutions designed to amplify your brand, boost visibility, and accelerate growth. From SEO that drives traffic to social media campaigns that spark conversations, we blend creativity with data-driven insights to deliver measurable ROI.',
+    features: [
+      'Search Engine Optimization (SEO)',
+      'Pay-Per-Click (PPC) Advertising',
+      'Social Media Marketing',
+      'Content Marketing',
+      'Email Marketing Campaigns',
+      'Analytics & Performance Tracking'
+    ],
+    process: [
+      { title: 'Strategy', description: 'Analyzing your market and creating a comprehensive marketing plan' },
+      { title: 'Campaign Setup', description: 'Setting up tracking, campaigns, and content calendars' },
+      { title: 'Implementation', description: 'Executing campaigns across multiple channels' },
+      { title: 'Optimization', description: 'Continuous monitoring and performance optimization' },
+      { title: 'Reporting', description: 'Regular reports and strategy refinements' }
+    ],
+    technologies: ['Google Ads', 'Facebook Ads', 'Google Analytics', 'SEMrush', 'Mailchimp'],
+    timeline: '2-4 weeks setup, ongoing campaigns',
+    startingPrice: '1,999 onwards'
+  }
   };
 
   const service = serviceData[serviceSlug as keyof typeof serviceData];

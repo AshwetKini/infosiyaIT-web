@@ -363,7 +363,8 @@ const LeadForm: React.FC<LeadFormProps> = ({
     'App Development',
     'PC Assembling',
     'CRM Solutions',
-    'Custom Software Development'
+    'Custom Software Development',
+    'Digital Marketing'
   ];
 
   const {

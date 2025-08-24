@@ -14,7 +14,8 @@ import {
   Play,
   Award,
   Users,
-  CheckCircle
+  CheckCircle,
+  TrendingUp,
 } from 'lucide-react';
 
 const HomePage: React.FC = () => {
@@ -50,7 +51,13 @@ const HomePage: React.FC = () => {
       title: 'Custom Software',
       description: 'Tailored software solutions for your unique business needs.',
       slug: 'custom-software-development'
-    }
+    },
+    {
+    icon: TrendingUp,
+    title: 'Digital Marketing',
+    description: 'Comprehensive digital marketing strategies to boost your online presence and drive growth.',
+    slug: 'digital-marketing'
+  }
   ];
 
   const testimonials = [
