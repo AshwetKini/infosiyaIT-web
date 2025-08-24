@@ -42,11 +42,16 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img
+            {/* <img
               src="/infosiya.png"
               alt="Infosiya Logo"
               className="w-16 h-46 object-contain rounded"
-            />
+            /> */}
+            <img
+   src="/infosiya.png"
+   alt="InfosiyaIT Logo"
+   className="w-32 h-12 object-contain"   /* 128px wide, 48px tall */
+ />
           </Link>
 
           {/* Desktop Navigation */}

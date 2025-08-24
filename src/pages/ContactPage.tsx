@@ -56,8 +56,9 @@ const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email Us</h3>
+                    <p className="text-gray-600">info@infosiya.com</p>
                     <p className="text-gray-600">contact@infosiya.com</p>
-                    <p className="text-gray-600">support@infosiya.com</p>
+                    <p className="text-gray-600">info@infosiya.ae</p>
                   </div>
                 </div>
 
@@ -68,7 +69,7 @@ const ContactPage: React.FC = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Call Us</h3>
                     <p className="text-gray-600">+91 6392101270</p>
-                    <p className="text-gray-600">+91 8329833526</p>
+                    <p className="text-gray-600">+97 1555243090</p>
                   </div>
                 </div>
 
@@ -82,6 +83,10 @@ const ContactPage: React.FC = () => {
                       B-592, Chowkhandi, Tilak nagar,<br />
                        New Delhi, 110018<br />
                       India
+                    </p>
+
+                    <p className="text-gray-600 mt-2">
+                      Shabiya-10, Mussfah Abudhabi
                     </p>
                   </div>
                 </div>
@@ -108,9 +113,12 @@ const ContactPage: React.FC = () => {
                 <p className="text-gray-600 mb-4">
                   For urgent inquiries or technical support, our team is available 24/7.
                 </p>
-                <button className="btn-primary text-white px-6 py-3 rounded-lg font-medium">
-                  Contact Emergency Support
-                </button>
+                <a
+                   href="tel:+919369504698"
+                    className="btn-primary text-white px-6 py-3 rounded-lg font-medium inline-block"
+                >
+                 Contact Emergency Support
+                </a>
               </div>
             </motion.div>
           </div>
