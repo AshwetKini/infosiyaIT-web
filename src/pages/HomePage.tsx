@@ -397,13 +397,20 @@ const HomePage: React.FC = () => {
                 <span>Start Your Project</span>
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link
+              {/* <Link
                 to="/services/website-development"
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center space-x-2"
               >
                 <Users className="w-5 h-5" />
                 <span>Schedule a Call</span>
-              </Link>
+              </Link> */}
+              <a
+   href="tel:+919369504698"
+   className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center space-x-2"
+ >
+   <Users className="w-5 h-5" />
+   <span>Call us</span>
+ </a>
             </div>
           </motion.div>
         </div>
